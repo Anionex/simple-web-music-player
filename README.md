@@ -1,6 +1,6 @@
 # 简易音乐播放器页面
 
-假如根目录是music.example.com，那么当用户访问music.example.com/song1时，会显示针对song1.mp3的播放页面。
+假如根目录是music.example.com，那么当用户访问music.example.com/song?=song1时，会显示针对song1.mp3的播放页面。
 
 ## 播放页面
 背景：
