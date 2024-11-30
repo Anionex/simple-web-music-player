@@ -71,8 +71,8 @@ class MusicPlayer {
     }
     
     async loadSong() {
-        const path = window.location.pathname;
-        const songId = path.split('/').pop() || 'song1';
+        const urlParams = new URLSearchParams(window.location.search);
+        const songId = urlParams.get('song') || 'song1';
         
         try {
             const response = await fetch(`assets/${songId}.json`);
